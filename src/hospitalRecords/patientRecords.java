@@ -14,6 +14,10 @@ public class patientRecords {
         this.age = age;
         this.appointmentDate = appointmentDate;
     }
+    public void basicDetails(){
+        System.out.println("patient" + name);
+        System.out.println("appointmentDate" +appointmentDate);
+    }
 
     public String getPatientId() {
         return patientId;
