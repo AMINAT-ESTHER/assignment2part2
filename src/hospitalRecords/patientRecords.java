@@ -3,27 +3,21 @@ package hospitalRecords;
 public class patientRecords {
     public String name;
     public String appointmentDate;
-    String medicalHistory;
+    public String medicalHistory;
 
     private int age;
     private String patientId;
 
-    public patientRecords(String patientId, String name,int age, String appointmentDate){
+    public patientRecords(String patientId, String name,String medicalHistory, String appointmentDate){
         this.patientId = patientId;
         this.name = name;
-        this.age = age;
+        this.medicalHistory = medicalHistory;
         this.appointmentDate = appointmentDate;
     }
     public void basicDetails(){
-        System.out.println("patient" + name);
-        System.out.println("appointmentDate" +appointmentDate);
+        System.out.println("   Receptionist view");
+        System.out.println("patient:" + name);
+        System.out.println("appointment date:" +appointmentDate);
     }
 
-    public String getPatientId() {
-        return patientId;
-    }
-
-    public int getAge() {
-        return age;
-    }
 }
